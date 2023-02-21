@@ -93,5 +93,10 @@ npm i style-loader css-loader -D
 npm i sass-loader -D
 ```
 
+- Fast Refresh
+```cl
+npm i  @pmmmwh/react-refresh-webpack-plugin react-refresh -D
+```
+
 ### Source Maps
  > A source map is a file that maps from the transformed source to the original source, enabling the browser to reconstruct the original source and present the reconstructed original in the debugger.
