@@ -58,3 +58,11 @@ npm i webpack webpack-cli -D
 ```cl
 npx webpack
 ```
+
+- Install 'html-webpack-plugin'
+
+```cl
+npm i html-webpack-plugin -D
+```
+
+> The plugin will generate an HTML5 file that includes all your webpack bundles in the body using script tags.
