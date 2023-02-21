@@ -1,3 +1,4 @@
 export function App() {
-  return <h1>Hello</h1>
+  throw new Error('Tudo bugado por aqui')
+  return <h1>Hello world</h1>
 }

@@ -1,6 +1,4 @@
-import React from "react";
+import {render} from "react-dom";
 import { App } from "./App";
 
-function Hello() {
-  return <h1>Hello</h1>
-}
+render(<App />, document.getElementById('root'))
