@@ -75,5 +75,10 @@ npm i webpack-dev-server -D
 
 > development server that provides live reloading. This should be used for development only. It uses webpack-dev-middleware under the hood, which provides fast in-memory access to the webpack assets.
 
+- Development and Production
+> Separate the production and development specific bits out, maintain a "common" configuration to keep things DRY. In order to merge these configurations together, we'll use a utility called **webpack-merge**
+```cl
+npm i webpack-merge -D
+```
 ### Source Maps
  > A source map is a file that maps from the transformed source to the original source, enabling the browser to reconstruct the original source and present the reconstructed original in the debugger.
