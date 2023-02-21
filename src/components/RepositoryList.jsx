@@ -1,25 +1,32 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { RepositoryItem } from "./RepositoryItem";
-
-const repository = {
-  name: "Unform",
-  description: "Sou um repo",
-  link: "https://github.com"
-}
+import "../styles/repositories.scss";
 
 export function RepositoryList() {
-  const [counter, setCounter] = useState(0)
-  const increment = () => {
-    setCounter(counter + 1)
-  }
+  const [repositories, setRepositories] = useState([])
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const getRepos = await fetch('https://api.github.com/users/kevinCubas/repos')
+      const repos = await getRepos.json()
+      setRepositories(repos)
+    }
+    try {
+      fetchData()
+    } catch (error) {
+      console.log(error)
+    }
+  }, [])
+
   return (
     <section className="repository-list">
       <h1>Lista de repositórios</h1>
       <ul>
-        <RepositoryItem repository={repository}/>
+        {repositories.map((repo) => (
+            <RepositoryItem key={repo.id} repository={repo} />
+          )
+        )}
       </ul>
-      <h1>{counter}</h1>
-      <button type="button" onClick={increment}>Incrementar</button>
     </section>
   )
 };
