@@ -100,3 +100,21 @@ npm i  @pmmmwh/react-refresh-webpack-plugin react-refresh -D
 
 ### Source Maps
  > A source map is a file that maps from the transformed source to the original source, enabling the browser to reconstruct the original source and present the reconstructed original in the debugger.
+
+## Typescript
+
+- Installing Typescript
+
+```cl
+npm i typescript -D
+```
+
+- Initialize typescript - create ts.config
+```cl
+npx tsc --init
+```
+
+- Babel’s support for TypeScript
+```cl
+npm i @babel/preset-typescript -D
+```
