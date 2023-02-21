@@ -66,3 +66,11 @@ npm i html-webpack-plugin -D
 ```
 
 > The plugin will generate an HTML5 file that includes all your webpack bundles in the body using script tags.
+
+- Install 'webpack-dev-server'
+
+```cl
+npm i webpack-dev-server -D
+```
+
+> development server that provides live reloading. This should be used for development only. It uses webpack-dev-middleware under the hood, which provides fast in-memory access to the webpack assets.
