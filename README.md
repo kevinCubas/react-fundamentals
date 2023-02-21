@@ -86,6 +86,12 @@ npm i webpack-merge -D
 ```cs
 npm i style-loader css-loader -D
 ```
+\
+*Only to use Sass*
+- Installing **Sass** loader
+```cs
+npm i sass-loader -D
+```
 
 ### Source Maps
  > A source map is a file that maps from the transformed source to the original source, enabling the browser to reconstruct the original source and present the reconstructed original in the debugger.
