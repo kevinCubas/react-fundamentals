@@ -80,5 +80,12 @@ npm i webpack-dev-server -D
 ```cl
 npm i webpack-merge -D
 ```
+
+- Installing CSS loader
+  - To import CSS files inside JSX file
+```cs
+npm i style-loader css-loader -D
+```
+
 ### Source Maps
  > A source map is a file that maps from the transformed source to the original source, enabling the browser to reconstruct the original source and present the reconstructed original in the debugger.
