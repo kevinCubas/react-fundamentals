@@ -1,4 +1,4 @@
-# Chapter I
+# React app configuration from scratch
 
 - **Init** the repository - Package.json
 ```
